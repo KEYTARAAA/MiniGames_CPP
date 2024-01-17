@@ -1,0 +1,3 @@
+C:\Users\Kitara\Desktop\ME\Coding\C++\Minigames\Minigames\Debug\Minigames.vcxproj.AssemblyReference.cache
+C:\Users\Kitara\Desktop\ME\Coding\C++\Minigames\Minigames\Debug\Minigames.MainForm.resources
+C:\Users\Kitara\Desktop\ME\Coding\C++\Minigames\Minigames\Debug\Minigames.vcxproj.GenerateResource.cache
