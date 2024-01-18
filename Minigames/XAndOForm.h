@@ -246,7 +246,6 @@ namespace Minigames {
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
-			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->BackColor = System::Drawing::Color::DarkRed;
 			this->ClientSize = System::Drawing::Size(617, 791);
 			this->Controls->Add(this->label1);
