@@ -119,11 +119,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Connect4Form.cpp" />
+    <ClCompile Include="HangmanForm.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="XAndOForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Connect4Form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="HangmanForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MainForm.h">
@@ -137,12 +141,18 @@
     <EmbeddedResource Include="Connect4Form.resx">
       <DependentUpon>Connect4Form.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HangmanForm.resx">
+      <DependentUpon>HangmanForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XAndOForm.resx">
       <DependentUpon>XAndOForm.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="words.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

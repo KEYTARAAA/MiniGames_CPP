@@ -1,24 +1,26 @@
 #include "Connect4Form.h"
 
 #include<iostream>
+#include<string>
 #include <list>
 
 
 
+using namespace System::Windows::Forms;
 
 
 public enum CONNECT_4 { NONE = 0, RED = 1, YELLOW = 2 };
-int board_Connect4[7][6];
+const int HEIGHT_Connect4 = 6;
+const int WIDTH_Connect4 = 7;
+int board_Connect4[HEIGHT_Connect4][WIDTH_Connect4];
 int turn_Connect4 = 0;
 int win_Connect4 = 4;
 bool won_Connect4 = false;
 
 
 void printBoard_Connect4() {
-	for (int row = 0; row < 7; row++)
-	{
-		for (int col = 0; col < 6; col++)
-		{
+	for (int row = 0; row < HEIGHT_Connect4; row++) {
+		for (int col = 0; col < WIDTH_Connect4; col++) {
 			std::cout << board_Connect4[row][col] << " ";
 		}
 		std::cout << std::endl;
@@ -36,11 +38,10 @@ bool checkTie_Connect4()
 bool checkWinPattern_Connect4(int row, int col, int directionRow, int directionCol)
 {
 	int player = board_Connect4[row][col];
-
 	std::list<int> rows, cols;
 	for (int r = (-win_Connect4 + 1); r < win_Connect4; r++)
 	{
-		if ((row + (r * directionRow) >= 0) && (row + (r * directionRow) < sizeof board_Connect4 / sizeof board_Connect4[0]) && (col + (r * directionCol) >= 0) && (col + (r * directionCol) < sizeof board_Connect4[0] / sizeof(int)))
+		if ((row + (r * directionRow) >= 0) && (row + (r * directionRow) < HEIGHT_Connect4) && (col + (r * directionCol) >= 0) && (col + (r * directionCol) < WIDTH_Connect4))
 		{
 			if ((board_Connect4[row + (directionRow * r)][col + (directionCol * r)] == player))
 			{
@@ -95,25 +96,21 @@ CONNECT_4 getEnum_Connect4() {
 }
 int getMinCol_Connect4(int col) {
 	int row = 0;
-	for (row = 0; row < sizeof board_Connect4 / sizeof board_Connect4[0]; row++)
+	for (row = HEIGHT_Connect4 -1; row >= 0; row--)
 	{
-		if (board_Connect4[(sizeof board_Connect4 / sizeof board_Connect4[0]) -1 -row] [col] == 0) {
-			return (sizeof board_Connect4 / sizeof board_Connect4[0]) - 1 - row;
+		if (board_Connect4[row] [col] == 0) {
+			return row;
 		}
 	}
-	return row;
+	return -1;
 }
-bool setBoard_Connect4(int col) {
-
-	std::cout << col << std::endl;
+int setBoard_Connect4(int col) {
 	int minRow = getMinCol_Connect4(col);
-	std::cout << minRow << std::endl;
-	if (minRow < sizeof board_Connect4 / sizeof board_Connect4[0]) {
+	if (minRow != -1) {
 		turn_Connect4++;
 		board_Connect4[minRow][col] = getEnum_Connect4();
-		return true;
 	}
-	return false;
+	return minRow;
 }
 
 
@@ -138,26 +135,36 @@ int letterToNumber_Connect4(System::String^ letter) {
 	}
 	return 6;
 }
+std::string NumberToLetter_Connect4(int number) {
+	if (number == 0) {
+		return "A";
+	}
+	else if (number == 1) {
+		return "B";
+	}
+	else if (number == 2) {
+		return "C";
+	}
+	else if (number == 3) {
+		return "D";
+	}
+	else if (number == 4) {
+		return "E";
+	}
+	else if (number == 5) {
+		return "F";
+	}
+	return "G";
+}
 
 
 System::Void Minigames::Connect4Form::button_Click_Connect4(System::Object^ sender, System::EventArgs^ e) {
 	array<String^>^ pos = ((Button^)sender)->Name->Split('_');
-	std::cout << 1 << std::endl;
-	if (setBoard_Connect4(letterToNumber_Connect4(pos[1])) && !won_Connect4) {
-		std::cout << 2 << std::endl;
-		//((Button^)sender)->Text = getTurn();
-		if (getEnum_Connect4() == RED) {
-
-			std::cout << 3 << std::endl;
-			((Button^)sender)->FlatAppearance->BorderColor = Color::Red;
-			((Button^)sender)->BackColor = Color::Red;
-		}
-		else {
-
-			((Button^)sender)->FlatAppearance->BorderColor = Color::Yellow;
-			((Button^)sender)->BackColor = Color::Yellow;
-		}
-		won_Connect4 = checkWin(System::Int32::Parse(pos[2]) - 1, letterToNumber_Connect4(pos[1]));
+	int col = letterToNumber_Connect4(pos[1]);
+	int row = setBoard_Connect4(col);
+	if ((row != -1) && !won_Connect4) {
+		colorButton_Connect4(row, col);
+		won_Connect4 = checkWin(row , col);
 		if (won_Connect4) {
 			/*label1->Text = getTurn() + "  WINS! :D";
 			if (getEnum() == X) {
@@ -184,3 +191,28 @@ void Minigames::Connect4Form::reset_Connect4()
 	turn_Connect4 = 0;
 	won_Connect4 = false;
 }
+
+void Minigames::Connect4Form::colorButton_Connect4(int row, int col)
+{
+	String^ name = gcnew String(  (  "button_" + NumberToLetter_Connect4(col) +"_" + std::to_string(std::abs(row -6) ) ).c_str() );
+	Button^ button = ((Button^)Controls->Find(name, true)[0]);
+
+	if (getEnum_Connect4() == RED) {
+		button->FlatAppearance->BorderColor = Color::Red;
+		button->BackColor = Color::DarkRed;
+		if (checkWin(row,col)) {
+			label1->ForeColor = Color::Red;
+			label1->Text = "RED WINS! :D";
+		}
+	}
+	else {
+
+		button->FlatAppearance->BorderColor = Color::Yellow;
+		button->BackColor = Color::Goldenrod;
+		if (checkWin(row, col)) {
+			label1->ForeColor = Color::Yellow;
+			label1->Text = "YELLOW WINS! :D";
+		}
+	}
+}
+

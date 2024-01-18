@@ -3,3 +3,4 @@ C:\Users\Kitara\Desktop\ME\Coding\C++\Minigames\Minigames\x64\Debug\Minigames.Co
 C:\Users\Kitara\Desktop\ME\Coding\C++\Minigames\Minigames\x64\Debug\Minigames.MainForm.resources
 C:\Users\Kitara\Desktop\ME\Coding\C++\Minigames\Minigames\x64\Debug\Minigames.XAndOForm.resources
 C:\Users\Kitara\Desktop\ME\Coding\C++\Minigames\Minigames\x64\Debug\Minigames.vcxproj.GenerateResource.cache
+C:\Users\Kitara\Desktop\ME\Coding\C++\Minigames\Minigames\x64\Debug\Minigames.HangmanForm.resources

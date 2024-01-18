@@ -103,7 +103,7 @@ namespace Minigames {
 			this->button_A_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button_A_1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button_A_1->Location = System::Drawing::Point(50, 50);
+			this->button_A_1->Location = System::Drawing::Point(32, 214);
 			this->button_A_1->Name = L"button_A_1";
 			this->button_A_1->Size = System::Drawing::Size(150, 150);
 			this->button_A_1->TabIndex = 0;
@@ -118,7 +118,7 @@ namespace Minigames {
 			this->button_B_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button_B_1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button_B_1->Location = System::Drawing::Point(250, 50);
+			this->button_B_1->Location = System::Drawing::Point(232, 214);
 			this->button_B_1->Name = L"button_B_1";
 			this->button_B_1->Size = System::Drawing::Size(150, 150);
 			this->button_B_1->TabIndex = 1;
@@ -133,7 +133,7 @@ namespace Minigames {
 			this->button_C_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button_C_1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button_C_1->Location = System::Drawing::Point(450, 50);
+			this->button_C_1->Location = System::Drawing::Point(432, 214);
 			this->button_C_1->Name = L"button_C_1";
 			this->button_C_1->Size = System::Drawing::Size(150, 150);
 			this->button_C_1->TabIndex = 2;
@@ -148,7 +148,7 @@ namespace Minigames {
 			this->button_A_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button_A_2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button_A_2->Location = System::Drawing::Point(50, 250);
+			this->button_A_2->Location = System::Drawing::Point(32, 414);
 			this->button_A_2->Name = L"button_A_2";
 			this->button_A_2->Size = System::Drawing::Size(150, 150);
 			this->button_A_2->TabIndex = 3;
@@ -163,7 +163,7 @@ namespace Minigames {
 			this->button_B_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button_B_2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button_B_2->Location = System::Drawing::Point(250, 250);
+			this->button_B_2->Location = System::Drawing::Point(232, 414);
 			this->button_B_2->Name = L"button_B_2";
 			this->button_B_2->Size = System::Drawing::Size(150, 150);
 			this->button_B_2->TabIndex = 4;
@@ -179,7 +179,7 @@ namespace Minigames {
 			this->button_C_2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button_C_2->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->button_C_2->Location = System::Drawing::Point(450, 250);
+			this->button_C_2->Location = System::Drawing::Point(432, 414);
 			this->button_C_2->Name = L"button_C_2";
 			this->button_C_2->Size = System::Drawing::Size(150, 150);
 			this->button_C_2->TabIndex = 5;
@@ -194,7 +194,7 @@ namespace Minigames {
 			this->button_A_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button_A_3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button_A_3->Location = System::Drawing::Point(50, 450);
+			this->button_A_3->Location = System::Drawing::Point(32, 614);
 			this->button_A_3->Name = L"button_A_3";
 			this->button_A_3->Size = System::Drawing::Size(150, 150);
 			this->button_A_3->TabIndex = 6;
@@ -209,7 +209,7 @@ namespace Minigames {
 			this->button_B_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button_B_3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button_B_3->Location = System::Drawing::Point(250, 450);
+			this->button_B_3->Location = System::Drawing::Point(232, 614);
 			this->button_B_3->Name = L"button_B_3";
 			this->button_B_3->Size = System::Drawing::Size(150, 150);
 			this->button_B_3->TabIndex = 7;
@@ -224,7 +224,7 @@ namespace Minigames {
 			this->button_C_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button_C_3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button_C_3->Location = System::Drawing::Point(450, 450);
+			this->button_C_3->Location = System::Drawing::Point(432, 614);
 			this->button_C_3->Name = L"button_C_3";
 			this->button_C_3->Size = System::Drawing::Size(150, 150);
 			this->button_C_3->TabIndex = 8;
@@ -234,11 +234,11 @@ namespace Minigames {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 65, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 50, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(26, 625);
+			this->label1->Location = System::Drawing::Point(97, 60);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(0, 124);
+			this->label1->Size = System::Drawing::Size(0, 95);
 			this->label1->TabIndex = 9;
 			// 
 			// XAndOForm
@@ -246,8 +246,9 @@ namespace Minigames {
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
+			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
 			this->BackColor = System::Drawing::Color::DarkRed;
-			this->ClientSize = System::Drawing::Size(641, 776);
+			this->ClientSize = System::Drawing::Size(617, 791);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button_C_3);
 			this->Controls->Add(this->button_B_3);
@@ -260,6 +261,7 @@ namespace Minigames {
 			this->Controls->Add(this->button_A_1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"XAndOForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"XAndOForm";
 			this->ResumeLayout(false);
 			this->PerformLayout();

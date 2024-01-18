@@ -24,6 +24,9 @@
     <ClCompile Include="Connect4Form.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HangmanForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainForm.h">
@@ -35,5 +38,13 @@
     <ClInclude Include="Connect4Form.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="HangmanForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="words.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

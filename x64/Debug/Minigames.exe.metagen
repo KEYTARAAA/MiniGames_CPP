@@ -1,4 +1,5 @@
   Minigames.Connect4Form.resources - Embedded, ContainedInManifestFile, 
+  Minigames.HangmanForm.resources - Embedded, ContainedInManifestFile, 
   Minigames.MainForm.resources - Embedded, ContainedInManifestFile, 
   Minigames.XAndOForm.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
@@ -22,10 +23,20 @@ Class Minigames.Connect4Form: AutoLayout, AnsiClass, Class, Public, BeforeFieldI
   Methods:
     button_Click_Connect4(Object, EventArgs): PrivateScope, Public, HideBySig
     reset_Connect4(): PrivateScope, Public, HideBySig
+    colorButton_Connect4(Int32, Int32): PrivateScope, Public, HideBySig
 Struct CONNECT_4: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
+Class Minigames.HangmanForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    button_Click_Hangman(Object, EventArgs): PrivateScope, Public, HideBySig
+    reset_Hangman(): PrivateScope, Public, HideBySig
+    setButtons(): PrivateScope, Public, HideBySig
+    setButton(Int32): PrivateScope, Public, HideBySig
+    loseLife(): PrivateScope, Public, HideBySig
 Class Minigames.XAndOForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

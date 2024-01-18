@@ -84,6 +84,7 @@ namespace Minigames {
 	private: System::Windows::Forms::Button^ button_C;
 	private: System::Windows::Forms::Button^ button_B;
 	private: System::Windows::Forms::Button^ button_A;
+	private: System::Windows::Forms::Label^ label1;
 
 	private:
 		/// <summary>
@@ -147,6 +148,7 @@ namespace Minigames {
 			this->button_C = (gcnew System::Windows::Forms::Button());
 			this->button_B = (gcnew System::Windows::Forms::Button());
 			this->button_A = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button_A_1
@@ -155,7 +157,7 @@ namespace Minigames {
 			this->button_A_1->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_A_1->FlatAppearance->BorderSize = 5;
 			this->button_A_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_A_1->Location = System::Drawing::Point(43, 676);
+			this->button_A_1->Location = System::Drawing::Point(27, 681);
 			this->button_A_1->Name = L"button_A_1";
 			this->button_A_1->Size = System::Drawing::Size(75, 75);
 			this->button_A_1->TabIndex = 0;
@@ -168,7 +170,7 @@ namespace Minigames {
 			this->button_B_1->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_B_1->FlatAppearance->BorderSize = 5;
 			this->button_B_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_B_1->Location = System::Drawing::Point(124, 676);
+			this->button_B_1->Location = System::Drawing::Point(108, 681);
 			this->button_B_1->Name = L"button_B_1";
 			this->button_B_1->Size = System::Drawing::Size(75, 75);
 			this->button_B_1->TabIndex = 1;
@@ -181,7 +183,7 @@ namespace Minigames {
 			this->button_C_1->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_C_1->FlatAppearance->BorderSize = 5;
 			this->button_C_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_C_1->Location = System::Drawing::Point(205, 676);
+			this->button_C_1->Location = System::Drawing::Point(189, 681);
 			this->button_C_1->Name = L"button_C_1";
 			this->button_C_1->Size = System::Drawing::Size(75, 75);
 			this->button_C_1->TabIndex = 2;
@@ -194,7 +196,7 @@ namespace Minigames {
 			this->button_D_1->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_D_1->FlatAppearance->BorderSize = 5;
 			this->button_D_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_D_1->Location = System::Drawing::Point(286, 676);
+			this->button_D_1->Location = System::Drawing::Point(270, 681);
 			this->button_D_1->Name = L"button_D_1";
 			this->button_D_1->Size = System::Drawing::Size(75, 75);
 			this->button_D_1->TabIndex = 3;
@@ -207,7 +209,7 @@ namespace Minigames {
 			this->button_E_1->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_E_1->FlatAppearance->BorderSize = 5;
 			this->button_E_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_E_1->Location = System::Drawing::Point(367, 676);
+			this->button_E_1->Location = System::Drawing::Point(351, 681);
 			this->button_E_1->Name = L"button_E_1";
 			this->button_E_1->Size = System::Drawing::Size(75, 75);
 			this->button_E_1->TabIndex = 4;
@@ -220,7 +222,7 @@ namespace Minigames {
 			this->button_F_1->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_F_1->FlatAppearance->BorderSize = 5;
 			this->button_F_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_F_1->Location = System::Drawing::Point(448, 676);
+			this->button_F_1->Location = System::Drawing::Point(432, 681);
 			this->button_F_1->Name = L"button_F_1";
 			this->button_F_1->Size = System::Drawing::Size(75, 75);
 			this->button_F_1->TabIndex = 5;
@@ -233,7 +235,7 @@ namespace Minigames {
 			this->button_G_1->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_G_1->FlatAppearance->BorderSize = 5;
 			this->button_G_1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_G_1->Location = System::Drawing::Point(529, 676);
+			this->button_G_1->Location = System::Drawing::Point(513, 681);
 			this->button_G_1->Name = L"button_G_1";
 			this->button_G_1->Size = System::Drawing::Size(75, 75);
 			this->button_G_1->TabIndex = 6;
@@ -246,7 +248,7 @@ namespace Minigames {
 			this->button_G_2->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_G_2->FlatAppearance->BorderSize = 5;
 			this->button_G_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_G_2->Location = System::Drawing::Point(529, 595);
+			this->button_G_2->Location = System::Drawing::Point(513, 600);
 			this->button_G_2->Name = L"button_G_2";
 			this->button_G_2->Size = System::Drawing::Size(75, 75);
 			this->button_G_2->TabIndex = 13;
@@ -259,7 +261,7 @@ namespace Minigames {
 			this->button_F_2->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_F_2->FlatAppearance->BorderSize = 5;
 			this->button_F_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_F_2->Location = System::Drawing::Point(448, 595);
+			this->button_F_2->Location = System::Drawing::Point(432, 600);
 			this->button_F_2->Name = L"button_F_2";
 			this->button_F_2->Size = System::Drawing::Size(75, 75);
 			this->button_F_2->TabIndex = 12;
@@ -272,7 +274,7 @@ namespace Minigames {
 			this->button_E_2->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_E_2->FlatAppearance->BorderSize = 5;
 			this->button_E_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_E_2->Location = System::Drawing::Point(367, 595);
+			this->button_E_2->Location = System::Drawing::Point(351, 600);
 			this->button_E_2->Name = L"button_E_2";
 			this->button_E_2->Size = System::Drawing::Size(75, 75);
 			this->button_E_2->TabIndex = 11;
@@ -285,7 +287,7 @@ namespace Minigames {
 			this->button_D_2->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_D_2->FlatAppearance->BorderSize = 5;
 			this->button_D_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_D_2->Location = System::Drawing::Point(286, 595);
+			this->button_D_2->Location = System::Drawing::Point(270, 600);
 			this->button_D_2->Name = L"button_D_2";
 			this->button_D_2->Size = System::Drawing::Size(75, 75);
 			this->button_D_2->TabIndex = 10;
@@ -298,7 +300,7 @@ namespace Minigames {
 			this->button_C_2->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_C_2->FlatAppearance->BorderSize = 5;
 			this->button_C_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_C_2->Location = System::Drawing::Point(205, 595);
+			this->button_C_2->Location = System::Drawing::Point(189, 600);
 			this->button_C_2->Name = L"button_C_2";
 			this->button_C_2->Size = System::Drawing::Size(75, 75);
 			this->button_C_2->TabIndex = 9;
@@ -311,7 +313,7 @@ namespace Minigames {
 			this->button_B_2->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_B_2->FlatAppearance->BorderSize = 5;
 			this->button_B_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_B_2->Location = System::Drawing::Point(124, 595);
+			this->button_B_2->Location = System::Drawing::Point(108, 600);
 			this->button_B_2->Name = L"button_B_2";
 			this->button_B_2->Size = System::Drawing::Size(75, 75);
 			this->button_B_2->TabIndex = 8;
@@ -324,7 +326,7 @@ namespace Minigames {
 			this->button_A_2->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_A_2->FlatAppearance->BorderSize = 5;
 			this->button_A_2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_A_2->Location = System::Drawing::Point(43, 595);
+			this->button_A_2->Location = System::Drawing::Point(27, 600);
 			this->button_A_2->Name = L"button_A_2";
 			this->button_A_2->Size = System::Drawing::Size(75, 75);
 			this->button_A_2->TabIndex = 7;
@@ -337,7 +339,7 @@ namespace Minigames {
 			this->button_G_3->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_G_3->FlatAppearance->BorderSize = 5;
 			this->button_G_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_G_3->Location = System::Drawing::Point(529, 514);
+			this->button_G_3->Location = System::Drawing::Point(513, 519);
 			this->button_G_3->Name = L"button_G_3";
 			this->button_G_3->Size = System::Drawing::Size(75, 75);
 			this->button_G_3->TabIndex = 20;
@@ -350,7 +352,7 @@ namespace Minigames {
 			this->button_F_3->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_F_3->FlatAppearance->BorderSize = 5;
 			this->button_F_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_F_3->Location = System::Drawing::Point(448, 514);
+			this->button_F_3->Location = System::Drawing::Point(432, 519);
 			this->button_F_3->Name = L"button_F_3";
 			this->button_F_3->Size = System::Drawing::Size(75, 75);
 			this->button_F_3->TabIndex = 19;
@@ -363,7 +365,7 @@ namespace Minigames {
 			this->button_E_3->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_E_3->FlatAppearance->BorderSize = 5;
 			this->button_E_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_E_3->Location = System::Drawing::Point(367, 514);
+			this->button_E_3->Location = System::Drawing::Point(351, 519);
 			this->button_E_3->Name = L"button_E_3";
 			this->button_E_3->Size = System::Drawing::Size(75, 75);
 			this->button_E_3->TabIndex = 18;
@@ -376,7 +378,7 @@ namespace Minigames {
 			this->button_D_3->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_D_3->FlatAppearance->BorderSize = 5;
 			this->button_D_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_D_3->Location = System::Drawing::Point(286, 514);
+			this->button_D_3->Location = System::Drawing::Point(270, 519);
 			this->button_D_3->Name = L"button_D_3";
 			this->button_D_3->Size = System::Drawing::Size(75, 75);
 			this->button_D_3->TabIndex = 17;
@@ -389,7 +391,7 @@ namespace Minigames {
 			this->button_C_3->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_C_3->FlatAppearance->BorderSize = 5;
 			this->button_C_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_C_3->Location = System::Drawing::Point(205, 514);
+			this->button_C_3->Location = System::Drawing::Point(189, 519);
 			this->button_C_3->Name = L"button_C_3";
 			this->button_C_3->Size = System::Drawing::Size(75, 75);
 			this->button_C_3->TabIndex = 16;
@@ -402,7 +404,7 @@ namespace Minigames {
 			this->button_B_3->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_B_3->FlatAppearance->BorderSize = 5;
 			this->button_B_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_B_3->Location = System::Drawing::Point(124, 514);
+			this->button_B_3->Location = System::Drawing::Point(108, 519);
 			this->button_B_3->Name = L"button_B_3";
 			this->button_B_3->Size = System::Drawing::Size(75, 75);
 			this->button_B_3->TabIndex = 15;
@@ -415,7 +417,7 @@ namespace Minigames {
 			this->button_A_3->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_A_3->FlatAppearance->BorderSize = 5;
 			this->button_A_3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_A_3->Location = System::Drawing::Point(43, 514);
+			this->button_A_3->Location = System::Drawing::Point(27, 519);
 			this->button_A_3->Name = L"button_A_3";
 			this->button_A_3->Size = System::Drawing::Size(75, 75);
 			this->button_A_3->TabIndex = 14;
@@ -428,7 +430,7 @@ namespace Minigames {
 			this->button_G_4->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_G_4->FlatAppearance->BorderSize = 5;
 			this->button_G_4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_G_4->Location = System::Drawing::Point(529, 433);
+			this->button_G_4->Location = System::Drawing::Point(513, 438);
 			this->button_G_4->Name = L"button_G_4";
 			this->button_G_4->Size = System::Drawing::Size(75, 75);
 			this->button_G_4->TabIndex = 27;
@@ -441,7 +443,7 @@ namespace Minigames {
 			this->button_F_4->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_F_4->FlatAppearance->BorderSize = 5;
 			this->button_F_4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_F_4->Location = System::Drawing::Point(448, 433);
+			this->button_F_4->Location = System::Drawing::Point(432, 438);
 			this->button_F_4->Name = L"button_F_4";
 			this->button_F_4->Size = System::Drawing::Size(75, 75);
 			this->button_F_4->TabIndex = 26;
@@ -454,7 +456,7 @@ namespace Minigames {
 			this->button_E_4->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_E_4->FlatAppearance->BorderSize = 5;
 			this->button_E_4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_E_4->Location = System::Drawing::Point(367, 433);
+			this->button_E_4->Location = System::Drawing::Point(351, 438);
 			this->button_E_4->Name = L"button_E_4";
 			this->button_E_4->Size = System::Drawing::Size(75, 75);
 			this->button_E_4->TabIndex = 25;
@@ -467,7 +469,7 @@ namespace Minigames {
 			this->button_D_4->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_D_4->FlatAppearance->BorderSize = 5;
 			this->button_D_4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_D_4->Location = System::Drawing::Point(286, 433);
+			this->button_D_4->Location = System::Drawing::Point(270, 438);
 			this->button_D_4->Name = L"button_D_4";
 			this->button_D_4->Size = System::Drawing::Size(75, 75);
 			this->button_D_4->TabIndex = 24;
@@ -480,7 +482,7 @@ namespace Minigames {
 			this->button_C_4->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_C_4->FlatAppearance->BorderSize = 5;
 			this->button_C_4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_C_4->Location = System::Drawing::Point(205, 433);
+			this->button_C_4->Location = System::Drawing::Point(189, 438);
 			this->button_C_4->Name = L"button_C_4";
 			this->button_C_4->Size = System::Drawing::Size(75, 75);
 			this->button_C_4->TabIndex = 23;
@@ -493,7 +495,7 @@ namespace Minigames {
 			this->button_B_4->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_B_4->FlatAppearance->BorderSize = 5;
 			this->button_B_4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_B_4->Location = System::Drawing::Point(124, 433);
+			this->button_B_4->Location = System::Drawing::Point(108, 438);
 			this->button_B_4->Name = L"button_B_4";
 			this->button_B_4->Size = System::Drawing::Size(75, 75);
 			this->button_B_4->TabIndex = 22;
@@ -506,7 +508,7 @@ namespace Minigames {
 			this->button_A_4->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_A_4->FlatAppearance->BorderSize = 5;
 			this->button_A_4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_A_4->Location = System::Drawing::Point(43, 433);
+			this->button_A_4->Location = System::Drawing::Point(27, 438);
 			this->button_A_4->Name = L"button_A_4";
 			this->button_A_4->Size = System::Drawing::Size(75, 75);
 			this->button_A_4->TabIndex = 21;
@@ -519,7 +521,7 @@ namespace Minigames {
 			this->button_G_5->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_G_5->FlatAppearance->BorderSize = 5;
 			this->button_G_5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_G_5->Location = System::Drawing::Point(529, 352);
+			this->button_G_5->Location = System::Drawing::Point(513, 357);
 			this->button_G_5->Name = L"button_G_5";
 			this->button_G_5->Size = System::Drawing::Size(75, 75);
 			this->button_G_5->TabIndex = 34;
@@ -532,7 +534,7 @@ namespace Minigames {
 			this->button_F_5->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_F_5->FlatAppearance->BorderSize = 5;
 			this->button_F_5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_F_5->Location = System::Drawing::Point(448, 352);
+			this->button_F_5->Location = System::Drawing::Point(432, 357);
 			this->button_F_5->Name = L"button_F_5";
 			this->button_F_5->Size = System::Drawing::Size(75, 75);
 			this->button_F_5->TabIndex = 33;
@@ -545,7 +547,7 @@ namespace Minigames {
 			this->button_E_5->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_E_5->FlatAppearance->BorderSize = 5;
 			this->button_E_5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_E_5->Location = System::Drawing::Point(367, 352);
+			this->button_E_5->Location = System::Drawing::Point(351, 357);
 			this->button_E_5->Name = L"button_E_5";
 			this->button_E_5->Size = System::Drawing::Size(75, 75);
 			this->button_E_5->TabIndex = 32;
@@ -558,7 +560,7 @@ namespace Minigames {
 			this->button_D_5->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_D_5->FlatAppearance->BorderSize = 5;
 			this->button_D_5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_D_5->Location = System::Drawing::Point(286, 352);
+			this->button_D_5->Location = System::Drawing::Point(270, 357);
 			this->button_D_5->Name = L"button_D_5";
 			this->button_D_5->Size = System::Drawing::Size(75, 75);
 			this->button_D_5->TabIndex = 31;
@@ -571,7 +573,7 @@ namespace Minigames {
 			this->button_C_5->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_C_5->FlatAppearance->BorderSize = 5;
 			this->button_C_5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_C_5->Location = System::Drawing::Point(205, 352);
+			this->button_C_5->Location = System::Drawing::Point(189, 357);
 			this->button_C_5->Name = L"button_C_5";
 			this->button_C_5->Size = System::Drawing::Size(75, 75);
 			this->button_C_5->TabIndex = 30;
@@ -584,7 +586,7 @@ namespace Minigames {
 			this->button_B_5->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_B_5->FlatAppearance->BorderSize = 5;
 			this->button_B_5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_B_5->Location = System::Drawing::Point(124, 352);
+			this->button_B_5->Location = System::Drawing::Point(108, 357);
 			this->button_B_5->Name = L"button_B_5";
 			this->button_B_5->Size = System::Drawing::Size(75, 75);
 			this->button_B_5->TabIndex = 29;
@@ -597,7 +599,7 @@ namespace Minigames {
 			this->button_A_5->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_A_5->FlatAppearance->BorderSize = 5;
 			this->button_A_5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_A_5->Location = System::Drawing::Point(43, 352);
+			this->button_A_5->Location = System::Drawing::Point(27, 357);
 			this->button_A_5->Name = L"button_A_5";
 			this->button_A_5->Size = System::Drawing::Size(75, 75);
 			this->button_A_5->TabIndex = 28;
@@ -610,7 +612,7 @@ namespace Minigames {
 			this->button_G_6->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_G_6->FlatAppearance->BorderSize = 5;
 			this->button_G_6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_G_6->Location = System::Drawing::Point(529, 271);
+			this->button_G_6->Location = System::Drawing::Point(513, 276);
 			this->button_G_6->Name = L"button_G_6";
 			this->button_G_6->Size = System::Drawing::Size(75, 75);
 			this->button_G_6->TabIndex = 41;
@@ -623,7 +625,7 @@ namespace Minigames {
 			this->button_F_6->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_F_6->FlatAppearance->BorderSize = 5;
 			this->button_F_6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_F_6->Location = System::Drawing::Point(448, 271);
+			this->button_F_6->Location = System::Drawing::Point(432, 276);
 			this->button_F_6->Name = L"button_F_6";
 			this->button_F_6->Size = System::Drawing::Size(75, 75);
 			this->button_F_6->TabIndex = 40;
@@ -636,7 +638,7 @@ namespace Minigames {
 			this->button_E_6->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_E_6->FlatAppearance->BorderSize = 5;
 			this->button_E_6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_E_6->Location = System::Drawing::Point(367, 271);
+			this->button_E_6->Location = System::Drawing::Point(351, 276);
 			this->button_E_6->Name = L"button_E_6";
 			this->button_E_6->Size = System::Drawing::Size(75, 75);
 			this->button_E_6->TabIndex = 39;
@@ -649,7 +651,7 @@ namespace Minigames {
 			this->button_D_6->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_D_6->FlatAppearance->BorderSize = 5;
 			this->button_D_6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_D_6->Location = System::Drawing::Point(286, 271);
+			this->button_D_6->Location = System::Drawing::Point(270, 276);
 			this->button_D_6->Name = L"button_D_6";
 			this->button_D_6->Size = System::Drawing::Size(75, 75);
 			this->button_D_6->TabIndex = 38;
@@ -662,7 +664,7 @@ namespace Minigames {
 			this->button_C_6->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_C_6->FlatAppearance->BorderSize = 5;
 			this->button_C_6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_C_6->Location = System::Drawing::Point(205, 271);
+			this->button_C_6->Location = System::Drawing::Point(189, 276);
 			this->button_C_6->Name = L"button_C_6";
 			this->button_C_6->Size = System::Drawing::Size(75, 75);
 			this->button_C_6->TabIndex = 37;
@@ -675,7 +677,7 @@ namespace Minigames {
 			this->button_B_6->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_B_6->FlatAppearance->BorderSize = 5;
 			this->button_B_6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_B_6->Location = System::Drawing::Point(124, 271);
+			this->button_B_6->Location = System::Drawing::Point(108, 276);
 			this->button_B_6->Name = L"button_B_6";
 			this->button_B_6->Size = System::Drawing::Size(75, 75);
 			this->button_B_6->TabIndex = 36;
@@ -688,7 +690,7 @@ namespace Minigames {
 			this->button_A_6->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_A_6->FlatAppearance->BorderSize = 5;
 			this->button_A_6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_A_6->Location = System::Drawing::Point(43, 271);
+			this->button_A_6->Location = System::Drawing::Point(27, 276);
 			this->button_A_6->Name = L"button_A_6";
 			this->button_A_6->Size = System::Drawing::Size(75, 75);
 			this->button_A_6->TabIndex = 35;
@@ -701,7 +703,7 @@ namespace Minigames {
 			this->button_G->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_G->FlatAppearance->BorderSize = 5;
 			this->button_G->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_G->Location = System::Drawing::Point(529, 190);
+			this->button_G->Location = System::Drawing::Point(513, 195);
 			this->button_G->Name = L"button_G";
 			this->button_G->Size = System::Drawing::Size(75, 75);
 			this->button_G->TabIndex = 48;
@@ -714,7 +716,7 @@ namespace Minigames {
 			this->button_F->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_F->FlatAppearance->BorderSize = 5;
 			this->button_F->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_F->Location = System::Drawing::Point(448, 190);
+			this->button_F->Location = System::Drawing::Point(432, 195);
 			this->button_F->Name = L"button_F";
 			this->button_F->Size = System::Drawing::Size(75, 75);
 			this->button_F->TabIndex = 47;
@@ -727,7 +729,7 @@ namespace Minigames {
 			this->button_E->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_E->FlatAppearance->BorderSize = 5;
 			this->button_E->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_E->Location = System::Drawing::Point(367, 190);
+			this->button_E->Location = System::Drawing::Point(351, 195);
 			this->button_E->Name = L"button_E";
 			this->button_E->Size = System::Drawing::Size(75, 75);
 			this->button_E->TabIndex = 46;
@@ -740,7 +742,7 @@ namespace Minigames {
 			this->button_D->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_D->FlatAppearance->BorderSize = 5;
 			this->button_D->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_D->Location = System::Drawing::Point(286, 190);
+			this->button_D->Location = System::Drawing::Point(270, 195);
 			this->button_D->Name = L"button_D";
 			this->button_D->Size = System::Drawing::Size(75, 75);
 			this->button_D->TabIndex = 45;
@@ -753,7 +755,7 @@ namespace Minigames {
 			this->button_C->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_C->FlatAppearance->BorderSize = 5;
 			this->button_C->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_C->Location = System::Drawing::Point(205, 190);
+			this->button_C->Location = System::Drawing::Point(189, 195);
 			this->button_C->Name = L"button_C";
 			this->button_C->Size = System::Drawing::Size(75, 75);
 			this->button_C->TabIndex = 44;
@@ -766,7 +768,7 @@ namespace Minigames {
 			this->button_B->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_B->FlatAppearance->BorderSize = 5;
 			this->button_B->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_B->Location = System::Drawing::Point(124, 190);
+			this->button_B->Location = System::Drawing::Point(108, 195);
 			this->button_B->Name = L"button_B";
 			this->button_B->Size = System::Drawing::Size(75, 75);
 			this->button_B->TabIndex = 43;
@@ -779,20 +781,32 @@ namespace Minigames {
 			this->button_A->FlatAppearance->BorderColor = System::Drawing::Color::Blue;
 			this->button_A->FlatAppearance->BorderSize = 5;
 			this->button_A->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button_A->Location = System::Drawing::Point(43, 190);
+			this->button_A->Location = System::Drawing::Point(27, 195);
 			this->button_A->Name = L"button_A";
 			this->button_A->Size = System::Drawing::Size(75, 75);
 			this->button_A->TabIndex = 42;
 			this->button_A->UseVisualStyleBackColor = false;
 			this->button_A->Click += gcnew System::EventHandler(this, &Connect4Form::button_Click_Connect4);
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 40, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->Location = System::Drawing::Point(12, 64);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(613, 76);
+			this->label1->TabIndex = 49;
+			this->label1->Text = L"YELLOW WINS! :d";
+			// 
 			// Connect4Form
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::DarkBlue;
-			this->ClientSize = System::Drawing::Size(641, 776);
+			this->ClientSize = System::Drawing::Size(617, 791);
 			this->ControlBox = false;
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button_G);
 			this->Controls->Add(this->button_F);
 			this->Controls->Add(this->button_E);
@@ -848,13 +862,16 @@ namespace Minigames {
 			this->Name = L"Connect4Form";
 			this->ShowIcon = false;
 			this->ShowInTaskbar = false;
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterParent;
 			this->Text = L"Connect4Form";
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 
 	public: System::Void button_Click_Connect4(System::Object^ sender, System::EventArgs^ e);
 	public: void reset_Connect4();
+	public: void colorButton_Connect4(int row, int col);
 	};
 }
